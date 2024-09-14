@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(0deg, #170202 0%, #160e0e 100%);
+}
+
+.wrapper {
+    display: flex;
+    width: 90vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 50%;
+    height: fit-content;
+    width: fit-content;
+    
+}
+
+.calculadora {
+    width: fit-content;
+    margin-right: 1%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: fit-content;
+
+
+
+    
+    background: linear-gradient(0deg, #141010 0%, #0c0a0a 100%);
+    opacity: 95%;
+     
+
+    border-radius: 25px;
+    
+}
+
+.visor {
+
+    color: #9f0d0d;
+    width: 100%;
+    font-size:5vh;
+    text-align: right;
+    margin: 3px;
+    padding: 3px;
+    min-height: 50px;
+    height: auto;
+    border-radius: 25px;
+    background: radial-gradient(#0f0000 0%, #030202 100%);
+    
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    gap: 0.5vw+1.2vh;
+    width: 90%;
+    height: 80%;
+    margin:10px;
+    
+}
+
+.botao {
+    padding: 2vh+1vw;
+    font-size: 2em;
+    border:#333;
+    border-radius: 20px;
+    cursor: pointer;
+    
+    opacity: 90%;
+    color: #f4f4f4;
+
+    background: radial-gradient(#140303 0%, #030202 100%);
+}
+
+.botao:hover{
+    background: radial-gradient(#0d0101 0%, #e2c6c6 100%);
+}
+
+
+
+.grande {
+    grid-column: span 2;
+}
+
+.igual {
+    grid-row: span 2;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.historico {
+    width: 30%;
+    height: 60vh;
+    color: #ccc;
+    padding: 20px;
+    border-left: 1px solid #ccc;
+    
+    overflow:scroll;
+    border-radius: 25px;
+    background: linear-gradient(0deg, #170202 0%, #160e0e 100%);
+
+    scrollbar-width: none;
+    
+    
+}
+
+
+.scroll-container::-webkit-scrollbar {
+    display: none; /* Oculta a barra de rolagem */
+}
+
+.historico h2 {
+    margin-top: 0;
+}

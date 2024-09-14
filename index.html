@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Vermeia</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="calculadora">
+            <div class="visor" id="visor"></div>
+            <div class="botoes">
+                <button class="botao grande" onclick="limpar()">C</button>
+                <button class="botao" onclick="inserir('/')">/</button>
+                <button class="botao" onclick="inserir('*')">*</button>
+                <button class="botao" onclick="inserir('7')">7</button>
+                <button class="botao" onclick="inserir('8')">8</button>
+                <button class="botao" onclick="inserir('9')">9</button>
+                <button class="botao" onclick="inserir('+')">+</button>
+                <button class="botao" onclick="inserir('4')">4</button>
+                <button class="botao" onclick="inserir('5')">5</button>
+                <button class="botao" onclick="inserir('6')">6</button>
+                <button class="botao" onclick="inserir('-')">-</button>
+                <button class="botao" onclick="inserir('1')">1</button>
+                <button class="botao" onclick="inserir('2')">2</button>
+                <button class="botao" onclick="inserir('3')">3</button>
+                <button class="botao igual" onclick="calcular()">=</button>
+                <button class="botao grande" onclick="inserir('0')">0</button>
+                <button class="botao" onclick="inserir('.')">.</button>
+            </div>
+        </div>
+        <div class="historico scroll-container" id="historico">
+            <h2>Histórico</h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
